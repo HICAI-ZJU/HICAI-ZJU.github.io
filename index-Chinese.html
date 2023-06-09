@@ -1,0 +1,499 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>HIC-AIX</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Google Fonts --->
+<link href='http://fonts.useso.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<!-- Google Fonts --->
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+	<script type="text/javascript" src="js/easing.js"></script>
+					<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+</script>
+</head>
+<body>
+	<!--- Header Starts Here ---->
+	<div class="header" id="home">
+		<div class="container">
+			<div class="logos">
+
+			</div>
+			<!--- banner Slider starts Here --->
+	  			<script src="js/responsiveslides.min.js"></script>
+					 <script>
+					    // You can also use "$(window).load(function() {"
+					    $(function () {
+					      // Slideshow 4
+					      $("#slider4").responsiveSlides({
+					        auto: true,
+					        pager: true,
+					        nav: true,
+					        speed: 500,
+					        namespace: "callbacks",
+					        before: function () {
+					          $('.events').append("<li>before event fired.</li>");
+					        },
+					        after: function () {
+					          $('.events').append("<li>after event fired.</li>");
+					        }
+					      });
+					
+					    });
+					  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			        	<div class="slide-content">
+							
+							<p></p>
+
+						</div>
+					 </li>
+					
+			      </ul>
+			    </div>
+		</div>
+	</div>
+	<!--- Header Ends Here ---->
+	<!-- Navigation Starts Here ---->
+	<!-- top-nav -->
+		
+		<div class="top-nav">
+			<nav>
+				<span class="menu"></span>
+				<ul>
+					<li class="active"><a href="#home" class="scroll">主页</a></li>
+					<li><a href="#about" class="scroll">团队负责人</a></li>
+					<li><a href="#work" class="scroll">团队成员</a></li>
+					<li><a href="#publication" class="publication">科研成果</a></li>
+					<li><a href="#contact" class="contact">联系我们</a></li>
+					<li><a href="index.html" >English</a></li>
+					<div class="clearfix"> </div>
+				</ul>
+			</nav>
+		</div>
+		<script>
+					$( "span.menu" ).click(function() {
+					  $( ".top-nav ul" ).slideToggle( "slow", function() {
+					    // Animation complete.
+					  });
+					});
+				</script>
+
+		<script src="js/myscript.js"> </script>
+		<!-- top-nav -->
+	<!--- Navigarion Ends Here --->
+	<!--- About Us Starts Here ---->
+	
+	<div class="introduce" id="introduce">
+		<div class="container">	
+	
+			<font size = "5"></br>本团队依托浙江大学计算机学院和杭州国际科创中心，在陈华钧教授和张强博士带领下，致力于人工智能与生物、化学、材料、药学等多学科交叉研究。</br></br> </p></font>
+			
+		</div>
+	</div>
+	
+	<div class="about" id="about">
+		<div class="container">
+			<h3 class="top-title">团队负责人</h3>
+		
+			<div class="row about-row">
+				<div class="col-md-3 about-row-column">
+					<img src="images/Huajun Chen.jpg" alt=""/>
+				</div>
+				<div class="col-md-9 about-column">
+					<h3>陈华钧</h3>
+					<h4>教授，博士生导师</h4>
+					<p>陈华钧，浙江大学计算机科学与技术学院教授 (求是特聘科研岗)，博士生导师，主要研究方向为知识图谱、大数据系统、自然语言处理等。 在WWW/IJCAI/ AAAI/KR/ACL/EMNLP/KDD/VLDB/ICDE/ACM MM/TKDE/IEEE CIM/IEEE Intelligent System/Briefings in Bioinforamtics等国际顶级会议或期刊上发表多篇论文。 作为负责人主持多项国家自然科学基金重点类项目， 以及国家重点研发计划课题、国家重大科技专项及企业合作项目等二十余项。 曾获国际语义网会议ISWC2006最佳论文奖（一作）、高等学校科学技术奖技术发明一等奖、 钱伟长中文信息处理科技奖一等奖、阿里巴巴优秀学术合作奖、 中国工信传媒出版集团优秀出版物专业类一等奖等奖励。 </p>
+					<!-- <h5>Skills</h5>
+					<div id="progressbar"><div id="progress" ><div id="pbaranim">11%</div></div></div>
+					<ul class="social">
+						<li><i class="fa"></i></li>
+						<li><i class="tw"></i></li>
+						<li><i class="in"></i></li>
+						<li><i class="pw"></i></li>
+					</ul> -->
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="row about-row">
+				<div class="col-md-9 about-column">
+					<h3>张强</h3>
+					<h4>研究员，博士生导师</h4>
+					<p>张强，浙江大学“科创百人”研究员，博士生导师。曾在2020-2021年在英国伦敦大学学院（University College London）计算机系担任博后研究员， 2017-2020年曾在该系攻读博士学位，导师是Emine Yilmaz教授。 他于2014-2017年在中国科学院攻读硕士，2010-2014年在山东大学攻取学士学位。 他的研究主要涉及到机器学习、数据挖掘、自然语言处理和生物分子智造等领域， 曾参加多项英国政府EPSRC和企业的资助研究项目，在NeurIPS、ICML、WWW等人工智能顶级学术会议和SCI期刊发表十余篇文章。 他曾获得Google NLP Grant 和Nvidia GPU Grant, 在Facebook AI Research 和Amazon Alexa 等国际知名公司团队担任过研究型科学家实习生，拥有丰富的学术研究和工业项目经历。</p>
+					
+					
+				</div>
+				<div class="col-md-3 about-row-column">
+					<img src="images/Qiang Zhang.png" alt=""/>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			
+		</div>
+	</div>
+	<!--- About Us Ends Here ---->
+	<!--- Featured Work Starts Here ---->
+	<div class="feature" id="work">
+		<div class="container">			
+				<h3 class="top-title">团队成员</h3>
+				<div class="portfolio">
+					<ul id="filters" class="clearfix">
+						<li><span class="filter" data-filter="app card icon logo web"></span></li>
+						<!-- <li><span class="filter" data-filter="app"> 博导</span></li>
+						<li><span class="filter active" data-filter="card">博士及博士后</span></li>
+						<li><span class="filter" data-filter="icon">硕士</span></li>
+						<li><span class="filter" data-filter="logo"> 本科生</span></li> -->
+					</ul>
+					<div id="portfoliolist">
+						<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Yuqiang Han.jpg" height="250" width="250"/><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">韩玉强<br><span class="m_4">博士后</span>
+								<p class="b-animate b-from-right    b-delay03 "><br/>韩玉强博士是浙江大学科创中心的博士后研究员，合作导师是张强博士和陈华钧教授。 在此之前，他在浙江大学获得了博士学位，在山东大学获得了学士学位。 他的研究兴趣包括机器学习和深度学习，主要关注其在推荐系统、问答/对话系统和知识图谱等场景的应用。 最近，他主要关注人工智能在合成生物与分子智造领域的应用。</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>韩玉强-博士后</b></h4>
+							</div>
+						</div>				
+						<div class="portfolio logo mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Haihong Yang.jpg" height="250" width="250"/><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">杨海宏<br><span class="m_4">博士</span><br>
+								<p class="b-animate b-from-right    b-delay03 "><br/>杨海宏是浙江大学科创中心的博士生，导师是陈华钧教授。 在此之前，他在华南师范大学获得了本科学位。 他的研究兴趣包括知识图谱、图神经网络和最优传输。 曾在百度深度学习研究院和阿里巴巴达摩院进行研究型实习。 最近，他主要关注知识最优传输在实体链接及细胞交互预测中的创新研究。</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>杨海宏-博士</b></h4>
+							</div>
+						</div>	
+						<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Yin Fang.jpg" height="250" width="250"/><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">方尹<br><span class="m_4">博士</span>
+								<p class="b-animate b-from-right    b-delay03 "><br/>方尹，浙江大学在读博士，导师为陈华钧教授。 2017年获四川大学数学学院理学学士学位， 2020年获四川大学数学学院理学硕士学位。 目前的研究领域包括知识图谱和图表示学习。</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>方尹-博士</b></h4>
+							</div>
+						</div>			
+						<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Ming Qin.jpg" height="250" width="250"/><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">秦铭<br><span class="m_4">博士</span>
+								<p class="b-animate b-from-right    b-delay03 "><br/>我的研究兴趣包括将将机器学习模型应用于生物学和化学。 我希望在机器学习领域做进一步的探索创新， 并且使用最先进的机器学习模型为生物学家和化学家赋能。</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>秦铭-博士</b></h4>
+							</div>
+						</div>	
+						<div class="portfolio logo mix_all" data-cat="logo" style="display: inline-block; opacity: 1; clear: both;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Lingbing Guo.jpg" height="250" width="250"/><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">郭凌冰<br><span class="m_4">博士</span>
+								<p class="b-animate b-from-right    b-delay03 "><br/>浙江大学计算机与科学技术系在读博士生。本科和硕士专业均为计算机科学与技术， 分别毕业于河南大学与南京大学，研究兴趣主要为知识图谱表示学习与机器学习。</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>郭凌冰-博士</b></h4>
+							</div>
+						</div>	
+						<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog7" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Weibo Chen.jpg" height="250" width="250"/><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">陈伟博<br><span class="m_4">算法工程师</span>
+								<p class="b-animate b-from-right    b-delay03 "><br/>陈伟博，毕业于东京电机大学情報媒体学专业， 研究生时期主要研究方向为AI自动作曲相关， 毕业研究课题《利用深度学习自动分析乐曲和声进行》。 现入职浙江大学杭州国际科创中心担任工程师</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>陈伟博-算法工程师</b></h4>
+							</div>
+						</div>			
+						<div class="portfolio app mix_all"  data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog8" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Xiang Zhuang.jpg" height="250" width="250" class="img-hid" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">庄祥<br><span class="m_4">硕士</span>
+								<p class="b-animate b-from-right    b-delay03 "><br/>浙江大学计算机科学与技术硕士研究生， 本科毕业于浙江大学软件工程专业， 研究兴趣为元学习及其在生命科学、化学等领域的应用。</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>庄祥-硕士</b></h4>
+							</div>
+						</div>
+						<div class="portfolio app mix_all"  data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog9" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Zeyuan Wang.jpg" height="250" width="250" class="img-hid" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">王泽元<br><span class="m_4">硕士</span>
+								<p class="b-animate b-from-right    b-delay03 "><br/>我是浙江大学Klab实验室Al4SynBio项目组的二年级硕士生， 我的导师是陈华钧。 我最近关注与如何在蛋白质数据集上设计和利用大尺度无监督模型。</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>王泽元-硕士</b></h4>
+							</div>
+						</div>
+						<div class="portfolio app mix_all"  data-cat="app" style="display: inline-block; opacity: 1; clear: both;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog10" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Jian Zhang.jpg" height="250" width="250" class="img-hid" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">张建<br><span class="m_4">算法工程师</span>
+								<p class="b-animate b-from-right    b-delay03 "><br/>我是张建，硕士毕业于中国计量大学控制工程专业，目前是团队算法工程师，掌握Python、Java等语言。
+								</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>张建-算法工程师</b></h4>
+							</div>
+						</div>
+						<div class="portfolio app mix_all"  data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog11" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Yixuan Lai.jpg" height="250" width="250" class="img-hid" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">赖奕璇<br><span class="m_4">硕士</span>
+								<p class="b-animate b-from-right    b-delay03 "><br/>我是浙江大学的硕士生，在那里我从事机器学习、数据挖掘和 NLP 方面的工作。 最近，我一直专注于机器学习，包括图神经网络和表示学习。</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>赖奕璇-硕士</b></h4>
+							</div>
+						</div>
+						<div class="portfolio app mix_all"  data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog12" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Mengyao Zhang.jpg" class="img-hid" height="250" width="250"/><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">张孟垚<br><span class="m_4">硕士</span>
+								<p class="b-animate b-from-right    b-delay03 "><br/>浙江大学工程师学院硕士研究生， 导师为陈华钧老师。 本科毕业于郑州大学计算机科学与技术专业， 目前主要参与和药学院的合作
+								</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>张孟垚-硕士</b></h4>
+							</div>
+						</div>
+						<div class="portfolio app mix_all"  data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog13" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Tong Xu.jpg" height="250" width="250" class="img-hid" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">许彤<br><span class="m_4">本科生</span>
+								<p class="b-animate b-from-right    b-delay03 "><br/>我现在是一名浙江大学大四的本科生。 我将在2022年成为一名浙江大学计算机科学与技术学院的直博生。 我未来的导师是陈华钧教授和张强博士，做一些交叉方向的学习和研究。</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>许彤-博士</b></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="clearfix"></div>
+				<!---pop-up-box---->
+					  <script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
+					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+				<!---//pop-up-box---->
+					<div id="small-dialog" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Huajun Chen.jpg" alt=""/>
+							<p></p>
+						</div>
+					</div>
+					<div id="small-dialog1" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Qiang Zhang.png" alt=""/>
+							<p></p>
+						</div>
+					</div>
+					<div id="small-dialog2" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Yuqiang Han.jpg" alt=""/>
+							<p>韩玉强博士是浙江大学科创中心的博士后研究员，合作导师是张强博士和陈华钧教授。 在此之前，他在浙江大学获得了博士学位，在山东大学获得了学士学位。 他的研究兴趣包括机器学习和深度学习，主要关注其在推荐系统、问答/对话系统和知识图谱等场景的应用。 最近，他主要关注人工智能在合成生物与分子智造领域的应用</p>
+						</div>
+					</div>
+					<div id="small-dialog3" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Haihong Yang.jpg" alt=""/>
+							<p>杨海宏是浙江大学科创中心的博士生，导师是陈华钧教授。 在此之前，他在华南师范大学获得了本科学位。 他的研究兴趣包括知识图谱、图神经网络和最优传输。 曾在百度深度学习研究院和阿里巴巴达摩院进行研究型实习。 最近，他主要关注知识最优传输在实体链接及细胞交互预测中的创新研究</p>
+						</div>
+					</div>
+					<div id="small-dialog4" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Yin Fang.jpg" alt=""/>
+							<p><br/>方尹，浙江大学在读博士，导师为陈华钧教授。 2017年获四川大学数学学院理学学士学位， 2020年获四川大学数学学院理学硕士学位。 目前的研究领域包括知识图谱和图表示学习。</p>
+						</div>
+					</div>
+					<div id="small-dialog5" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Ming Qin.jpg" alt=""/>
+							<p><br/>我的研究兴趣包括将将机器学习模型应用于生物学和化学。 我希望在机器学习领域做进一步的探索创新， 并且使用最先进的机器学习模型为生物学家和化学家赋能。</p>
+						</div>
+					</div>
+					<div id="small-dialog6" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Lingbing Guo.jpg" alt=""/>
+							<p>浙江大学计算机与科学技术系在读博士生。本科和硕士专业均为计算机科学与技术， 分别毕业于河南大学与南京大学，研究兴趣主要为知识图谱表示学习与机器学习</p>
+						</div>
+					</div>
+					<div id="small-dialog7" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Weibo Chen.jpg" alt=""/>
+							<p>陈伟博，毕业于东京电机大学情報媒体学专业， 研究生时期主要研究方向为AI自动作曲相关， 毕业研究课题《利用深度学习自动分析乐曲和声进行》。 现入职浙江大学杭州国际科创中心担任工程师</p>
+						</div>
+					</div>
+					<div id="small-dialog8" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Xiang Zhuang.jpg" alt=""/>
+							<p>浙江大学计算机科学与技术硕士研究生， 本科毕业于浙江大学软件工程专业， 研究兴趣为元学习及其在生命科学、化学等领域的应用。</p>
+						</div>
+					</div>
+					<div id="small-dialog9" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Zeyuan Wang.jpg" alt=""/>
+							<p>我是浙江大学Klab实验室Al4SynBio项目组的二年级硕士生， 我的导师是陈华钧。 我最近关注与如何在蛋白质数据集上设计和利用大尺度无监督模型。</p>>
+							</p>
+						</div>
+					</div>
+					<div id="small-dialog10" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/photo/Jian Zhang.jpg" alt=""/>
+							<p>我是张建，硕士毕业于中国计量大学控制工程专业，目前是团队算法工程师，掌握Python、Java等语言。</p>
+							</p>
+					</div>
+					<div id="small-dialog11" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Yixuan Lai.jpg" alt=""/>
+							<p>我是浙江大学的硕士生，在那里我从事机器学习、数据挖掘和 NLP 方面的工作。 最近，我一直专注于机器学习，包括图神经网络和表示学习。</p>
+						</div>
+					</div>
+					<div id="small-dialog12" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Mengyao Zhang.jpg" alt=""/>
+							<p>浙江大学工程师学院硕士研究生， 导师为陈华钧老师。 本科毕业于郑州大学计算机科学与技术专业， 目前主要参与和药学院的合作</p>
+						</div>
+					</div>
+					<div id="small-dialog13" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Tong Xu.jpg" alt=""  />
+							<p>我现在是一名浙江大学大四的本科生。 我将在2022年成为一名浙江大学计算机科学与技术学院的直博生。 我未来的导师是陈华钧教授和张强博士，做一些交叉方向的学习和研究。</p>
+						</div>
+					</div>
+			<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>		
+				
+	
+		</div>
+	</div>
+	
+	<div class="publication" id="publication">
+		<div class="container">		
+		<h3 class="top-title">科研成果</h3>
+		
+			<p ></br> </p>
+			<font size = "5">Github地址: </p></font>
+			<a href="https://github.com/HICAIX/" title="Github">github.com/HICAIX/</a> 
+			<p ></br> </p>
+			
+			<font size = "5">论文成果:</br></br> </p>
+			<font size = "4">
+			<p >※Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming Qin, Zhuo Chen, Xiaohui Fan, Huajun Chen. Molecular Contrastive Learning with Chemical Element Knowledge Graph[J]. 2021.
+			（accepted in AAAI 2022 Main track）</p></br>
+			<p >※Yushan Zhu, Wen Zhang, Mingyang Chen, Hui Chen, Xu Cheng, Wei Zhang, and Huajun Chen. 2022. DualDE: Dually Distilling Knowledge Graph Embedding for Faster and Cheaper Reasoning. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (WSDM '22). Association for Computing Machinery, New York, NY, USA, 1516–1524. </br>DOI:https://doi.org/10.1145/3488560.3498437</p></br>
+			<p >※Hongbin Ye, Ningyu Zhang, Zhen Bi, Shumin Deng, Chuanqi Tan, Hui Chen, Fei Huang, Haujun Chen. Learning to Ask for Data-Efficient Event Argument Extraction (Student Abstract)[J]. Argument, 2022, 80(90): 100.</p></br>
+			<p >※Xin Shao, Haihong Yang, Xiang Zhuang, Jie Liao, Penghui Yang, Junyun Cheng, Xiaoyan Lu, Huajun Chen. "scDeepSort: a pre-trained cell-type annotation method for single-cell transcriptomics using deep learning with a weighted graph neural network." Nucleic acids research 49.21 (2021): e122-e122.</p></br>
+			<p >※Chen, Huajun, Shumin Deng, Wen Zhang, Zezhong Xu, Juan Li, Evgeny Kharlamov. "Neural symbolic reasoning with knowledge graphs: Knowledge extraction, relational reasoning, and inconsistency checking." Fundamental Research 1.5 (2021): 565-573.</p></br>
+			<p >※Geng, Yuxia, Jiaoyan Chen, Zhuo Chen, Jeff Z.Pan, Zhiquan Ye, Zonggang Yuan, Yantao Jia, Huajun Chen. "OntoZSL: Ontology-enhanced zero-shot learning." Proceedings of the Web Conference 2021. 2021.</p></br>
+			<p ></br> </p>
+			<p ></br> </p>
+			</font>
+			
+		</div>
+	</div>
+	
+	<div class="contact" id="contact">
+		<div class="container">		
+		</div>
+	</div>
+	
+	<!--- Featured Work Ends Here ---->	
+	
+	<!--- Footer Starts here -->
+	<div class="footer" id="footer">
+		<p class="copyright">HICAIX &copy; hic_aix@163.com</br>
+				</br>
+				</p>
+				<a target="_blank" </a></p>
+				<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+	</div>
+	<!--- Footer Ends here --->
+</body>
+</html>

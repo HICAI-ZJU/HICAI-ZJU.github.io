@@ -1,0 +1,502 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>HIC-AIX</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Google Fonts --->
+<link href='http://fonts.useso.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<!-- Google Fonts --->
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+	<script type="text/javascript" src="js/easing.js"></script>
+					<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+</script>
+</head>
+<body>
+	<!--- Header Starts Here ---->
+	<div class="header" id="home">
+		<div class="container">
+			<div class="logos">
+
+			</div>
+			<!--- banner Slider starts Here --->
+	  			<script src="js/responsiveslides.min.js"></script>
+					 <script>
+					    // You can also use "$(window).load(function() {"
+					    $(function () {
+					      // Slideshow 4
+					      $("#slider4").responsiveSlides({
+					        auto: true,
+					        pager: true,
+					        nav: true,
+					        speed: 500,
+					        namespace: "callbacks",
+					        before: function () {
+					          $('.events').append("<li>before event fired.</li>");
+					        },
+					        after: function () {
+					          $('.events').append("<li>after event fired.</li>");
+					        }
+					      });
+					
+					    });
+					  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			        	<div class="slide-content">
+
+							<p></p>
+						</div>
+					 </li>
+					
+			      </ul>
+			    </div>
+		</div>
+	</div>
+	<!--- Header Ends Here ---->
+	<!-- Navigation Starts Here ---->
+	<!-- top-nav -->
+		
+		<div class="top-nav">
+			<nav>
+				<span class="menu"></span>
+				<ul>
+					<li class="active"><a href="#home" class="scroll">Home</a></li>
+					<li><a href="#about" class="scroll">Team Leaders</a></li>
+					<li><a href="#work" class="scroll">Team Members</a></li>
+					<li><a href="#publication" class="publication">Achievements</a></li>
+					<li><a href="#contact" class="contact">Contact Us</a></li>
+					<li><a href="index-Chinese.html" >中文</a></li>
+					<div class="clearfix"> </div>
+					
+				</ul>
+			</nav>
+		</div>
+		<script>
+					$( "span.menu" ).click(function() {
+					  $( ".top-nav ul" ).slideToggle( "slow", function() {
+					    // Animation complete.
+					  });
+					});
+				</script>
+
+		<script src="js/myscript.js"> </script>
+		<!-- top-nav -->
+	<!--- Navigarion Ends Here --->
+	<!--- About Us Starts Here ---->
+	<div class="introduce" id="introduce">
+		<div class="container">	
+	
+			<font size = "5"></br>This team, led by Prof. Huajun Chen and Dr. Qiang Zhang, is mainly dedicated to AI advancements in cross-disciplinary applications to biology, chemistry, materials and drugs.</br></br> </p></font>
+			
+		</div>
+	</div>
+	<div class="about" id="about">
+		<div class="container">
+			<h3 class="top-title">Team Leaders</h3>
+			
+			<div class="row about-row">
+				<div class="col-md-3 about-row-column">
+					<img src="images/Huajun Chen.jpg" alt=""/>
+				</div>
+				<div class="col-md-9 about-column">
+					<h3>Huajun Chen</h3>
+					<h4>Professor</h4>
+					<p>Prof. Huajun Chen is a professor at the School of Computer Science and Technology of Zhejiang University . His main research directions are knowledge graphs, big data systems, natural language processing, etc. He have Published many papers in top international conferences or journals such as WWW, IJCAI, AAAI, KR, ACL, EMNLP, KDD, VLDB, ICDE, ACM MM and TKDE. He has presided over several national natural Science foundations He Won ISWC2006 Best Paper Award (first work), the first prize of Technology Invention of the University Science and Technology Award, the first prize of Qian Weichang Chinese Information Processing Technology Award, the Alibaba Outstanding Academic Cooperation Award, China Industry and Information Technology Media Publishing and the first prize of the group's outstanding publication. </p>
+					<!-- <h5>Skills</h5>
+					<div id="progressbar"><div id="progress" ><div id="pbaranim">11%</div></div></div>
+					<ul class="social">
+						<li><i class="fa"></i></li>
+						<li><i class="tw"></i></li>
+						<li><i class="in"></i></li>
+						<li><i class="pw"></i></li>
+					</ul> -->
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="row about-row">
+				<div class="col-md-9 about-column">
+					<h3>Qiang Zhang</h3>
+					<h4>Assistant Professor</h4>
+					<p>Dr. Qiang Zhang is a Principal Investigator under the Hundred Talents Program at Zhejiang University. Before joining Zhejiang University, he was a postdoctoral research fellow in machine learning working with Prof. Emine Yilmaz, affiliated with the Centre for Artificial Intelligence in University College London (UCL). He studied for the Ph.D. in UCL as well. Prior to that, he obtained M.Sc. from Chinese Academy of Sciences and B.Sc. from Shandong University. His research interests lie in the area of machine learning and span the entire theory-to-application spectrum from fundamental advances (e.g., Bayesian inference and meta learning) to practical progress (e.g., text mining, sequential data modeling). His research has been applied to text classification, knowledge graphs, information retrieval, recommender systems, and misinformation detection. Recently, he has been mainly focusing on AI applications to scientific discovery. </p>
+					
+					
+				</div>
+				<div class="col-md-3 about-row-column">
+					<img src="images/Qiang Zhang.png" alt=""/>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			
+		</div>
+	</div>
+	<!--- About Us Ends Here ---->
+	<!--- Featured Work Starts Here ---->
+	<div class="feature" id="work">
+		<div class="container">			
+				<h3 class="top-title">OUR TEAM</h3>
+				<div class="portfolio">
+					<ul id="filters" class="clearfix">
+						<li><span class="filter" data-filter="app card icon logo web">All people</span></li>
+						<!-- <li><span class="filter" data-filter="app"> 博导</span></li>
+						<li><span class="filter active" data-filter="card">博士及博士后</span></li>
+						<li><span class="filter" data-filter="icon">硕士</span></li>
+						<li><span class="filter" data-filter="logo"> 本科生</span></li> -->
+					</ul>
+					<div id="portfoliolist">
+						<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Yuqiang Han.jpg" height="250" width="250"/><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">Yuqiang Han<br><span class="m_4">Postdoc</span>
+								<p class="b-animate b-from-right    b-delay03 ">Dr. Yuqiang Han is a Postdoctoral Researcher at ZJU-Hangzhou Global Scientific and Technological Innovation Center, working with Dr. Qiang Zhang and Prof. Huajun Chen. Prior to that, he obtained Ph.D. from Zhejiang University and B.Sc. from Shandong University. His research interests lie in the areas of machine learning and deep learning, with application to recommender systems, dialogue systems, and knowledge graphs. Recently, he is mainly focusing on AI applications to scientific discovery.</p>>
+								</p></div></a>
+								<br><br>
+								<h4><b>Yuqiang Han-Postdoc</b></h4>
+							</div>
+						</div>				
+						<div class="portfolio logo mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Haihong Yang.jpg" height="250" width="250"/><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">Haihong Yang<br><span class="m_4">PhD</span><br>
+								<p class="b-animate b-from-right    b-delay03 ">Haihong Yang is a doctoral student at the Science and Technology Innovation Center of Zhejiang University, and his supervisor is Professor Huajun Chen. Before that, he obtained an undergraduate degree from South China Normal University. His research interests include knowledge graphs, graph neural networks, and optimal transport. He was a research intern at Baidu Research's Institute of Deep Learning (IDL) and The Alibaba DAMO Academy. Recently, he has mainly focused on innovative research on Knowledge Optimal Transport in entity linking and cell-cell communication prediction.</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>Haihong Yang-PhD</b></h4>
+							</div>
+						</div>	
+						<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Yin Fang.jpg" height="250" width="250"/><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">Yin Fang<br><span class="m_4">PhD</span>
+								<p class="b-animate b-from-right    b-delay03 ">Yin Fang is a PhD candidate in Zhejiang University and her supervisor is Professor Huajun Chen. She received her B.S. degree and M.S. degree in Mathematics College, Sichuan University. Her current research interests include knowledge graph and graph representation learning.</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>Yin Fang-PhD</b></h4>
+							</div>
+						</div>			
+						<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Ming Qin.jpg" height="250" width="250"/><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">Ming Qin<br><span class="m_4">PhD</span>
+								<p class="b-animate b-from-right    b-delay03 ">Ming Qin is a PhD student in Zhejiang University. His research applies AI technology to biology and proteins. with the hope to make further development in machine learning models and power biologists and chemists.</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>Ming Qin-PhD</b></h4>
+							</div>
+						</div>	
+						<div class="portfolio logo mix_all" data-cat="logo" style="display: inline-block; opacity: 1; clear: both">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Lingbing Guo.jpg" height="250" width="250"/><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">Lingbing Guo<br><span class="m_4">PhD</span>
+								<p class="b-animate b-from-right    b-delay03 ">Lingbing is currently a PhD candidate at Zhejiang University, supervised by Prof. Huajun Chen. He received my B.S. degree in Computer Science and Technology in 2016 at Henan University, and M.S. degree in Computer Science and Technology in 2019 at Nanjing University. His research interests include knowledge graph representation learning and machine learning.</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>Lingbing Guo-PhD</b></h4>
+							</div>
+						</div>	
+						<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog7" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Weibo Chen.jpg" height="250" width="250"/><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">Weibo Chen<br><span class="m_4">Algorithm engineer</span>
+								<p class="b-animate b-from-right    b-delay03 ">Weibo graduated from Tokyo Denki University，majored in media information。 His main research direction is AI automatic composition with the Graduation research project "Automaticly analyse the Harmony progress of music by Deep Learning". Now he works as an engineer in Hangzhou International Science and Innovation Center of Zhejiang University
+								</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>Weibo Chen-Algorithm engineer</b></h4>
+							</div>
+						</div>			
+						<div class="portfolio app mix_all"  data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog8" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Xiang Zhuang.jpg" height="250" width="250" class="img-hid" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">Xiang Zhuang<br><span class="m_4">Master</span>
+								<p class="b-animate b-from-right    b-delay03 ">Xiang is a Master student at Zhejiang University, supervised by Prof. Huajun Chen and Qiang Zhang, He received my B.S. degree in Software Engineering in 2020 at Zhejiang University. He is interested in meta learning and it's applications in biology.</p>>
+								</p></div></a>
+								<br><br>
+								<h4><b>Xiang Zhuang-Master</b></h4>
+							</div>
+						</div>
+						<div class="portfolio app mix_all"  data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog9" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Zeyuan Wang.jpg" height="250" width="250" class="img-hid" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">Zeyuan Wang<br><span class="m_4">Master</span>
+								<p class="b-animate b-from-right    b-delay03 ">Zeyuan is a 2nd-year Master student in AI4SynBio at the ZJU-Klab, Zhejiang University, supervised by Professor Huajun Chen. He recently is working on the design and applications of large-scale unsupervised models for protein dataset.</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>Zeyuan Wang-Master</b></h4>
+							</div>
+						</div>
+						<div class="portfolio app mix_all"  data-cat="app" style="display: inline-block; opacity: 1; clear: both;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog10" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Jian Zhang.jpg" height="250" width="250" class="img-hid" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">Jian Zhang<br><span class="m_4">Algorithm engineer</span>
+								<p class="b-animate b-from-right    b-delay03 "><br/>Jian is a Master's student from China Jiliang University,and works in our team as an engineer.He is good at Python and Java language.
+								</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>Jian Zhang-Algorithm engineer</b></h4>
+							</div>
+						</div>
+						<div class="portfolio app mix_all"  data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog11" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Yixuan Lai.jpg" height="250" width="250" class="img-hid" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">Yixuan Lai<br><span class="m_4">Master</span>
+								<p class="b-animate b-from-right    b-delay03 ">Yixuan is a Master's student at Zhejiang University. She works on machine learning, data mining and NLP. Recently, she has been focused on maching learning, including graph neural networks and representation learning.</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>Yixuan Lai-Master</b></h4>
+							</div>
+						</div>
+						<div class="portfolio app mix_all"  data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog12" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Mengyao Zhang.jpg" class="img-hid" height="250" width="250"/><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">Mengyao Zhang<br><span class="m_4">Master</span>
+								<p class="b-animate b-from-right    b-delay03 ">Mengyao is a Master student in Zhejiang University, supervised by Prof. Huajun Chen. He received my bachelor's degree in Computer Science and Technology from Zhengzhou University. At present, he mainly participates in the cooperation with the School of Pharmacy.
+								</p>>
+								</p></div></a>
+								<br><br>
+								<h4><b>Mengyao Zhang-Master</b></h4>
+							</div>
+						</div>
+						<div class="portfolio app mix_all"  data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog13" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+								<img src="images/photo/Tong Xu.jpg" height="250" width="250" class="img-hid" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								<p class="b-animate b-from-right    b-delay03 ">Tong Xu<br><span class="m_4">undergraduate</span>
+								<p class="b-animate b-from-right    b-delay03 ">Tong is now an undergraduate fourth-year student of Zhejiang University. He will be a PhD student of College of Computer science and Technology of Zhejiang University in 2022 and be supervised by Prof. Huajun Chen and Dr. Qiang Zhang.</p>
+								</p></div></a>
+								<br><br>
+								<h4><b>Tong Xu-PhD</b></h4>
+							</div>
+		                </div>
+					</div>
+				</div>
+				</div>
+				<div class="clearfix"></div>
+				<!---pop-up-box---->
+					  <script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
+					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+				<!---//pop-up-box---->
+					<div id="small-dialog" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Huajun Chen.jpg" alt=""/>
+							<p></p>
+						</div>
+					</div>
+					<div id="small-dialog1" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Qiang Zhang.png" alt=""/>
+							<p></p>
+						</div>
+					</div>
+					<div id="small-dialog2" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Yuqiang Han.jpg" alt=""/>
+							<p>Dr. Yuqiang Han is a Postdoctoral Researcher at ZJU-Hangzhou Global Scientific and Technological Innovation Center, working with Dr. Qiang Zhang and Prof. Huajun Chen. Prior to that, he obtained Ph.D. from Zhejiang University and B.Sc. from Shandong University. His research interests lie in the areas of machine learning and deep learning, with application to recommender systems, dialogue systems, and knowledge graphs. Recently, he is mainly focusing on AI applications to scientific discovery.</p>
+						</div>
+					</div>
+					<div id="small-dialog3" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Haihong Yang.jpg" alt=""/>
+							<p>Haihong Yang is a doctoral student at the Science and Technology Innovation Center of Zhejiang University, and his supervisor is Professor Huajun Chen. Before that, he obtained an undergraduate degree from South China Normal University. His research interests include knowledge graphs, graph neural networks, and optimal transport. He was a research intern at Baidu Research's Institute of Deep Learning (IDL) and The Alibaba DAMO Academy. Recently, he has mainly focused on innovative research on Knowledge Optimal Transport in entity linking and cell-cell communication prediction.</p>
+						</div>
+					</div>
+					<div id="small-dialog4" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Yin Fang.jpg" alt=""/>
+							<p>Yin Fang is a PhD candidate in Zhejiang University and her supervisor is Professor Huajun Chen. She received her B.S. degree and M.S. degree in Mathematics College, Sichuan University. Her current research interests include knowledge graph and graph representation learning.</p>
+						</div>
+					</div>
+					<div id="small-dialog5" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Ming Qin.jpg" alt=""/>
+							<p>Ming Qin is a PhD student in Zhejiang University. His research applies AI technology to biology and proteins. with the hope to make further development in machine learning models and power biologists and chemists.</p>
+						</div>
+					</div>
+					<div id="small-dialog6" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Lingbing Guo.jpg" alt=""/>
+							<p>Lingbing is currently a PhD candidate at Zhejiang University, supervised by Prof. Huajun Chen. He received my B.S. degree in Computer Science and Technology in 2016 at Henan University, and M.S. degree in Computer Science and Technology in 2019 at Nanjing University. His research interests include knowledge graph representation learning and machine learning.</p>
+						</div>
+					</div>
+					<div id="small-dialog7" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Weibo Chen.jpg" alt=""/>
+							<p>Weibo graduated from Tokyo Denki University，majored in media information。 His main research direction is AI automatic composition with the Graduation research project "Automaticly analyse the Harmony progress of music by Deep Learning". Now he works as an engineer in Hangzhou International Science and Innovation Center of Zhejiang University.</p>
+						</div>
+					</div>
+					<div id="small-dialog8" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Xiang Zhuang.jpg" alt=""/>
+							<p>Xiang is a Master student at Zhejiang University, supervised by Prof. Huajun Chen and Qiang Zhang, He received my B.S. degree in Software Engineering in 2020 at Zhejiang University. He is interested in meta learning and it's applications in biology..</p>
+						</div>
+					</div>
+					<div id="small-dialog9" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Zeyuan Wang.jpg" alt=""/>
+							<p>Zeyuan is a 2nd-year Master student in AI4SynBio at the ZJU-Klab, Zhejiang University, supervised by Professor Huajun Chen. He recently is working on the design and applications of large-scale unsupervised models for protein dataset.
+							</p>
+						</div>
+					</div>
+					<div id="small-dialog10" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Jian Zhang.jpg" alt=""/>
+							<p>Jian is a Master's student from China Jiliang University,and works in our team as an engineer.He is good at Python and Java language.
+							</p>
+					</div>
+					<div id="small-dialog11" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Yixuan Lai.jpg" alt=""/>
+							<p>LYixuan is a Master's student at Zhejiang University. She works on machine learning, data mining and NLP. Recently, she has been focused on maching learning, including graph neural networks and representation learning.
+							</p>
+						</div>
+					</div>
+					<div id="small-dialog12" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Mengyao Zhang.jpg" alt=""/>
+							<p>Mengyao is a Master student in Zhejiang University, supervised by Prof. Huajun Chen. He received my bachelor's degree in Computer Science and Technology from Zhengzhou University. At present, he mainly participates in the cooperation with the School of Pharmacy.
+						</div>
+					</div>
+					<div id="small-dialog13" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/Tong Xu.jpg" alt=""  />
+							<p>Tong is now an undergraduate fourth-year student of Zhejiang University. He will be a PhD student of College of Computer science and Technology of Zhejiang University in 2022 and be supervised by Prof. Huajun Chen and Dr. Qiang Zhang.
+						</div>
+					</div>
+			<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>		
+
+			
+		</div>
+	</div>
+	
+	
+	
+	<div class="publication" id="publication">
+		<div class="container">		
+		<h3 class="top-title">Achievements</h3>
+			
+			<p ></br> </p>
+			<font size = "5">Github: </p></font>
+			<a href="https://github.com/HICAIX/" title="Github">github.com/HICAIX/</a> 
+			<p ></br> </p>
+
+			<font size = "5">
+			<p>Papers:</br><br/> </p>
+			</font>
+			
+			<font size = "4">
+			<p >※Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming Qin, Zhuo Chen, Xiaohui Fan, Huajun Chen. Molecular Contrastive Learning with Chemical Element Knowledge Graph[J]. 2021.
+			（accepted in AAAI 2022 Main track）</p></br>
+			<p >※Yushan Zhu, Wen Zhang, Mingyang Chen, Hui Chen, Xu Cheng, Wei Zhang, and Huajun Chen. 2022. DualDE: Dually Distilling Knowledge Graph Embedding for Faster and Cheaper Reasoning. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (WSDM '22). Association for Computing Machinery, New York, NY, USA, 1516–1524. </br>DOI:https://doi.org/10.1145/3488560.3498437</p></br>
+			<p >※Hongbin Ye, Ningyu Zhang, Zhen Bi, Shumin Deng, Chuanqi Tan, Hui Chen, Fei Huang, Haujun Chen. Learning to Ask for Data-Efficient Event Argument Extraction (Student Abstract)[J]. Argument, 2022, 80(90): 100.</p></br>
+			<p >※Xin Shao, Haihong Yang, Xiang Zhuang, Jie Liao, Penghui Yang, Junyun Cheng, Xiaoyan Lu, Huajun Chen. "scDeepSort: a pre-trained cell-type annotation method for single-cell transcriptomics using deep learning with a weighted graph neural network." Nucleic acids research 49.21 (2021): e122-e122.</p></br>
+			<p >※Chen, Huajun, Shumin Deng, Wen Zhang, Zezhong Xu, Juan Li, Evgeny Kharlamov. "Neural symbolic reasoning with knowledge graphs: Knowledge extraction, relational reasoning, and inconsistency checking." Fundamental Research 1.5 (2021): 565-573.</p></br>
+			<p >※Geng, Yuxia, Jiaoyan Chen, Zhuo Chen, Jeff Z.Pan, Zhiquan Ye, Zonggang Yuan, Yantao Jia, Huajun Chen. "OntoZSL: Ontology-enhanced zero-shot learning." Proceedings of the Web Conference 2021. 2021.</p></br>
+			<p ></br> </p>
+			<p ></br> </p>
+			</font>
+			
+		</div>
+	</div>
+	
+	<div class="contact" id="contact">
+		<div class="container">		
+		</div>
+	</div>
+	<!--- Featured Work Ends Here ---->	
+	
+	<!--- Footer Starts here -->
+	<div class="footer" id="footer">
+		<p class="copyright">HICAIX &copy;hic_aix@163.com</br>
+				</br>
+				<a target="_blank" </a></p>
+				<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+	</div>
+	<!--- Footer Ends here --->
+</body>
+</html>
