@@ -2,68 +2,63 @@ url: https://hicai-zju.github.io
 baseurl: 
 
 # Site settings
-title: AGI for Science
+title:
 email: huajunsir@zju.edu.cn
-description: "An AGI for science team from Hangzhou Innovation Center of Zhejiang University."
+description: "An AI for science team from Hangzhou Innovation Center of Zhejiang University."
 
 
 # Team names, titles and social links
-people:
-- name: Huajun Chen
-  pic: 1
-  position: Professor
-  social:
-    - title: homepage
-      url: https://person.zju.edu.cn/en/huajun
+people-pi:
+- name: Prof. Qiang Zhang
+  pic: PI/1
+  position: PI Researcher
+  url: #
 
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
+- name: Prof. Keyan Ding
+  pic: PI/2
+  position: PI Researcher
+  url: #
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
-- name: Huajun Chen
-  pic: 1
-  position: Professor
-  social:
-    - title: homepage
-      url: https://person.zju.edu.cn/en/huajun
+- name: Prof. Renjun Xu
+  pic: PI/3
+  position: PI Researcher
+  url: #
 
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
+people-student:
+- name: Zeyuan Wang
+  pic: student/1
+  position: PhD Student
+  url: #
+
+- name: Min Qin
+  pic: student/2
+  position: PhD Student
+  url: #
 
 - name: Diana Petersen
-  pic: 3
+  pic: student/3
   position: Lead Developer
-  social:
-    - title: twitter
+  url: #
+
+- name: Diana Petersen
+  pic: student/3
+  position: Lead Developer
+  url: #
+
+people-ra:
+    - name: Huajun Chen
+      pic: ra/1
+      position: Professor
       url: #
-    - title: facebook
+
+    - name: Larry Parker
+      pic: ra/2
+      position: Lead Marketer
       url: #
-    - title: google-plus
+
+    - name: Diana Petersen
+      pic: ra/3
+      position: Lead Developer
       url: #
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)

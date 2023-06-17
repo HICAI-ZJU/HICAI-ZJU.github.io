@@ -3,25 +3,62 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Team</h2>
+                    <h2 class="section-heading">Team Leaders</h2>
                     <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
                         <a href="https://person.zju.edu.cn/en/huajun">
+                        <img src="img/team/huajun.jpg" class="img-responsive img-circle" alt="" width='200' height='200'>
                             <h4 class="col-lg-12">Prof. Huajun Chen</h4>
                         </a>
-                        <p class="text-muted">Team Leader</p>
+                        <p class="text-muted">Director，Full Professor of College of Computer Science, Zhejiang University</p>
                     </div>
                    <!-- <h3 class="section-subheading text-muted">.</h3>-->
                 </div>
             </div>
             <div class="row">
-                {% for member in site.people %}
+                {% for member in site.people-pi %}
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                        <a href="{{ member.url }}">
+                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="" width='160' height='160'>
+                        <h4>{{ member.name }}</h4>
+                        </a>
+                        <p class="text-muted">{{ member.position }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2>Students</h2>
+                </div>
+            </div>
+            <div class="row">
+                {% for member in site.people-student%}
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="{{ member.url }}">
+                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="" width='160' height='160'>
+                        <h4>{{ member.name }}</h4>
+                        </a>
+                        <p class="text-muted">{{ member.position }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2>Rearch Assistants</h2>
+                </div>
+            </div>
+            <div class="row">
+                {% for member in site.people-ra %}
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="{{ member.url }}">
+                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="" width='160' height='160'>
                         <h4>{{ member.name }}</h4>
                         <p class="text-muted">{{ member.position }}</p>
-                        <ul class="list-inline social-buttons">
+                       <!-- <ul class="list-inline social-buttons">
                             {% for network in member.social %}
                             <li>
                                 <a href="{{ network.url }}">
@@ -29,15 +66,16 @@
                                 </a>
                             </li>
                             {% endfor %}
-
+                        -->
                         </ul>
                     </div>
                 </div>
                 {% endfor %}
             </div>
+
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                    <p class="large text-muted">The team comes from Zhejiang University.</p>
                 </div>
             </div>
         </div>
