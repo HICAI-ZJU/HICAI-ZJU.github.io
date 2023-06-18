@@ -11,37 +11,42 @@ description: "An AI for science team from Hangzhou Innovation Center of Zhejiang
 people-pi:
 - name: Prof. Qiang Zhang
   pic: PI/1
-  position: PI Researcher
+  position: ZJU-Top100 Tantent Researcher <br> PI of AI CrossX Lab
   url: #
 
-- name: Prof. Keyan Ding
+- name: Dr. Keyan Ding
   pic: PI/2
-  position: PI Researcher
+  position: HIC-ZJU Tantent Researcher <br> PI of AI CrossX Lab
   url: #
 
 - name: Prof. Renjun Xu
   pic: PI/3
-  position: PI Researcher
+  position: ZJU-Top100 Tantent Researcher <br> PI of AI CrossX Lab
   url: #
 
 people-student:
-- name: Zeyuan Wang
+- name: Yuqiang Han
   pic: student/1
-  position: PhD Student
+  position: Postdoc
   url: #
 
-- name: Min Qin
+- name: Zeyuan Wang
   pic: student/2
   position: PhD Student
   url: #
 
-- name: Diana Petersen
+- name: Min Qin
   pic: student/3
+  position: PhD Student
+  url: #
+
+- name: Diana Petersen
+  pic: student/4
   position: Lead Developer
   url: #
 
 - name: Diana Petersen
-  pic: student/3
+  pic: student/5
   position: Lead Developer
   url: #
 

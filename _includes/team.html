@@ -3,13 +3,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Team Leaders</h2>
+                    <h2 class="section-heading">Team</h2>
+                     <p class="large text-muted">The cross-diciplinary team is composed of members from College of Computer Science of Zhejiang University, Institute for Intelligent Bio/Chem Manufacturing of Hangzhou Innovation Center of Zhejiang University, College of Pharmacy of Zhejiang University</p>
                     <div class="team-member">
                         <a href="https://person.zju.edu.cn/en/huajun">
                         <img src="img/team/huajun.jpg" class="img-responsive img-circle" alt="" width='200' height='200'>
                             <h4 class="col-lg-12">Prof. Huajun Chen</h4>
                         </a>
-                        <p class="text-muted">Director，Full Professor of College of Computer Science, Zhejiang University</p>
+                        <p class="small"> Full Professor, College of Computer Science and Technology, Zhejiang University <br>
+                            Director, AI CrossX Lab, Hangzhou Innovation Center of Zhejiang University</p>
                     </div>
                    <!-- <h3 class="section-subheading text-muted">.</h3>-->
                 </div>
@@ -19,17 +21,17 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                         <a href="{{ member.url }}">
-                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="" width='160' height='160'>
-                        <h4>{{ member.name }}</h4>
+                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="" width='180' height='180'>
+                        <h5>{{ member.name }}</h5>
                         </a>
-                        <p class="text-muted">{{ member.position }}</p>
+                        <p class="small">{{ member.position }}</p>
                     </div>
                 </div>
                 {% endfor %}
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2>Students</h2>
+                    <h4>Students</h4>
                 </div>
             </div>
             <div class="row">
@@ -38,16 +40,16 @@
                     <div class="team-member">
                         <a href="{{ member.url }}">
                         <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="" width='160' height='160'>
-                        <h4>{{ member.name }}</h4>
+                        <h5>{{ member.name }}</h5>
                         </a>
-                        <p class="text-muted">{{ member.position }}</p>
+                        <p class="small">{{ member.position }}</p>
                     </div>
                 </div>
                 {% endfor %}
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2>Rearch Assistants</h2>
+                    <h4>Rearch Assistants</h4>
                 </div>
             </div>
             <div class="row">
@@ -56,8 +58,8 @@
                     <div class="team-member">
                         <a href="{{ member.url }}">
                         <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="" width='160' height='160'>
-                        <h4>{{ member.name }}</h4>
-                        <p class="text-muted">{{ member.position }}</p>
+                        <h5>{{ member.name }}</h5>
+                        <p class="small">{{ member.position }}</p>
                        <!-- <ul class="list-inline social-buttons">
                             {% for network in member.social %}
                             <li>
@@ -71,12 +73,6 @@
                     </div>
                 </div>
                 {% endfor %}
-            </div>
-
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">The team comes from Zhejiang University.</p>
-                </div>
             </div>
         </div>
     </section>
