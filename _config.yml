@@ -87,24 +87,24 @@ people-student:
 
 people-ra:
     - name: Zhichen Gong
-      pic: ra/1
+      pic: RA/1
       position: Software Engineer
       url: #
 
     - name: Jian Zhang
-      pic: ra/2
+      pic: RA/2
       position: Software Engineer
       url: #
 
     - name: Junjie Huang
-      pic: ra/3
+      pic: RA/3
       position: Software Engineer
       url: #
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: Homepage
-    url: http://zjukg.org
+    url: http://hicai.zjunlp.org
   - title: twitter
     url:
   - title: github
