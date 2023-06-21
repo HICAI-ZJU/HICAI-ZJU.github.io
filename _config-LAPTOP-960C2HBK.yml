@@ -2,7 +2,8 @@ url: https://hicai-zju.github.io
 baseurl: 
 
 # Site settings
-title:
+
+title:  AI CrossX
 email: huajunsir@zju.edu.cn
 description: "An AI for science team from Hangzhou Innovation Center of Zhejiang University."
 
@@ -30,75 +31,40 @@ people-student:
   position: Postdoc
   url: #
 
-- name: Haihong Yang
+- name: Zeyuan Wang
   pic: student/2
   position: PhD Student
   url: #
 
-- name: Ming Qin
+- name: Min Qin
   pic: student/3
   position: PhD Student
   url: #
 
-- name: Zeyuan Wang
+- name: Diana Petersen
   pic: student/4
-  position: PhD Student
+  position: Lead Developer
   url: #
 
-- name: Yin Fang
+- name: Diana Petersen
   pic: student/5
-  position: PhD Student
-  url: #
-
-- name: Xiang Zhuang
-  pic: student/6
-  position: PhD Student
-  url: #
-
-- name: Lingbing Guo
-  pic: student/7
-  position: PhD Student
-  url: #
-
-- name: Tong Xu
-  pic: student/8
-  position: PhD Student
-  url: #
-
-- name: Mengyao Zhang
-  pic: student/9
-  position: MSc Student
-  url: #
-
-- name: Zhuoyi Xiang
-  pic: student/10
-  position: MSc Student
-  url: #
-
-- name: Xiaotong Li
-  pic: student/11
-  position: MSc Student
-  url: #
-
-- name: Yuhao Wang
-  pic: student/12
-  position: MSc Student
+  position: Lead Developer
   url: #
 
 people-ra:
-    - name: Zhichen Gong
+    - name: Huajun Chen
       pic: ra/1
-      position: Software Engineer
+      position: Professor
       url: #
 
-    - name: Jian Zhang
+    - name: Larry Parker
       pic: ra/2
-      position: Software Engineer
+      position: Lead Marketer
       url: #
 
-    - name: Junjie Huang
+    - name: Diana Petrsen
       pic: ra/3
-      position: Software Engineer
+      position: Lead Developer
       url: #
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
