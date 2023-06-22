@@ -85,6 +85,7 @@ people-student:
   position: MSc Student
   url: #
 
+
 people-ra:
     - name: Zhichen Gong
       pic: RA/1
@@ -98,6 +99,11 @@ people-ra:
 
     - name: Junjie Huang
       pic: RA/3
+      position: Software Engineer
+      url: #
+
+    - name: Hongjie Deng
+      pic: RA/4
       position: Software Engineer
       url: #
 
