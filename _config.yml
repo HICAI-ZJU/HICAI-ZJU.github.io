@@ -85,6 +85,26 @@ people-student:
   position: MSc Student
   url: #
 
+- name: Yixuan Lai
+  pic: student/9
+  position: MSc Student
+  url: #
+
+- name: Yuxia Geng
+  pic: student/10
+  position: MSc Student
+  url: #
+
+- name: Zhen Bi
+  pic: student/11
+  position: MSc Student
+  url: #
+
+- name: Zhuo Chen
+  pic: student/12
+  position: MSc Student
+  url: #
+
 
 people-ra:
     - name: Zhichen Gong
