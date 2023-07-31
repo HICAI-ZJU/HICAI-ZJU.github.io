@@ -129,10 +129,10 @@ people-ra:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: Homepage
+  - title: house
     url: http://hicai.zjunlp.org
   - title: twitter
-    url:
+    url: http://twitter.com/chenhuajun
   - title: github
     url: http://github.com/hicai-zju
 
