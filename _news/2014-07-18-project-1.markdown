@@ -1,0 +1,11 @@
+---
+title: Science Copilot
+subtitle: Copilot for Scientific Work
+layout: default
+
+date: 2023-05-04
+img: 1.jpg
+subheading: New article published in Nature Machine Intelligence
+context: A new article "Knowledge graph-enhanced molecular contrastive learning with functional prompt. " was just release in official website of Nature Machine Intelligence.
+
+---

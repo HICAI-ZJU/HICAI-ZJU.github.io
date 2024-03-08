@@ -1,0 +1,11 @@
+---
+title: Science Copilot
+subtitle: Copilot for Scientific Work
+layout: default
+
+date: 2023-04-01
+img: 2.jpg
+subheading: Release Instructed Protein Language model
+context: prompt engineering
+
+---

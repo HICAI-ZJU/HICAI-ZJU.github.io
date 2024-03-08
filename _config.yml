@@ -1,0 +1,150 @@
+url: https://hicai-zju.github.io
+baseurl: 
+
+# Site settings
+title: AI CrossX
+email: huajunsir@zju.edu.cn
+description: "An AI for science team from Hangzhou Innovation Center of Zhejiang University."
+
+
+# Team names, titles and social links
+people-pi:
+- name: Prof. Qiang Zhang
+  pic: PI/1
+  position: ZJU-Top100 Tantent Researcher <br> PI of AI CrossX Lab
+  url: #
+
+- name: Dr. Keyan Ding
+  pic: PI/2
+  position: HIC-ZJU Tantent Researcher <br> PI of AI CrossX Lab
+  url: #
+
+- name: Prof. Renjun Xu
+  pic: PI/3
+  position: ZJU-Top100 Tantent Researcher <br> PI of AI CrossX Lab
+  url: #
+
+people-student:
+- name: Yuqiang Han
+  pic: student/1
+  position: Postdoc
+  url: #
+
+- name: Haihong Yang
+  pic: student/2
+  position: PhD Student
+  url: #
+
+- name: Ming Qin
+  pic: student/3
+  position: PhD Student
+  url: #
+
+- name: Zeyuan Wang
+  pic: student/4
+  position: PhD Student
+  url: #
+
+- name: Yin Fang
+  pic: student/5
+  position: PhD Student
+  url: #
+
+- name: 祥哥
+  pic: student/6
+  position: Academician
+  url: #
+
+- name: Lingbing Guo
+  pic: student/7
+  position: PhD Student
+  url: #
+
+- name: Tong Xu
+  pic: student/8
+  position: PhD Student
+  url: #
+
+- name: Mengyao Zhang
+  pic: student/9
+  position: MSc Student
+  url: #
+
+- name: Zhuoyi Xiang
+  pic: student/10
+  position: MSc Student
+  url: #
+
+- name: Xiaotong Li
+  pic: student/11
+  position: MSc Student
+  url: #
+
+- name: Yuhao Wang
+  pic: student/12
+  position: MSc Student
+  url: #
+
+- name: Yixuan Lai
+  pic: student/13
+  position: MSc Student
+  url: #
+
+- name: Yuxia Geng
+  pic: student/14
+  position: PhD Student
+  url: #
+
+- name: Zhen Bi
+  pic: student/15
+  position: PhD Student
+  url: #
+
+- name: Zhuo Chen
+  pic: student/16
+  position: PhD Student
+  url: #
+
+
+people-ra:
+    - name: Zhichen Gong
+      pic: RA/1
+      position: Software Engineer
+      url: #
+
+    - name: Jian Zhang
+      pic: RA/2
+      position: Software Engineer
+      url: #
+
+    - name: Junjie Huang
+      pic: RA/3
+      position: Software Engineer
+      url: #
+
+    - name: Hongjie Deng
+      pic: RA/4
+      position: Software Engineer
+      url: #
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: house
+    url: http://hicai.zjunlp.org
+  - title: twitter
+    url: http://twitter.com/chenhuajun
+  - title: github
+    url: http://github.com/hicai-zju
+
+# Postal address (add as many lines as necessary)
+#address:
+ # - line: 3481 Melrose Place
+  #- line: Beverly Hills, CA 90210
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+collections:
+  news:
+    output: true

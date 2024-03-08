@@ -1,0 +1,15 @@
+---
+title: Science Copilot
+subtitle: Copilot for Scientific Work
+layout: default
+modal-id: 1
+date: 2014-07-18
+video: Science_Copilot_Demo5.mp4
+thumbnail: 1.png
+alt: image-alt
+project-date: April 2023
+members: Dr. Qiang Zhang 
+tags: General
+description: Science Copilot supports intelligent chatting (based on GPT-4), and offers an advanced literature Q&A that allows you to ask questions and receive answers based on the upload papers. Also, you can use its provision of variety of tools to assist in scientific research and analysis.
+
+---

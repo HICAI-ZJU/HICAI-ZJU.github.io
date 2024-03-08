@@ -1,0 +1,40 @@
+<!-- About Section -->
+    <section id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">News</h2>
+                    <h3 class="section-subheading text-muted">Recent news about the team. <a href="https://github.com/HICAI-ZJU/hicai-zju.github.io/wiki/News">Read More...</a> </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        {% assign invert = false %}
+                        {% for news in site.news reversed limit:6 %}
+                            {% if invert %}
+                                <li class="timeline-inverted">
+                                {% assign invert = false %}
+                            {% else %}
+                                <li>
+                                {% assign invert = true %}
+                            {% endif %}
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/news/{{ news.img }}" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>{{ news.date | date: news.date_format | default: news.date | date: "%Y-%m-%d" }}</h4>
+                                        <h4 class="subheading">{{ news.subheading }}</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">{{ news.context }}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,12 @@
+---
+title: Science Copilot
+subtitle: Copilot for Scientific Work
+layout: default
+
+date: 2023-01-01
+date_format: "%Y-%m"
+img: 3.jpg
+subheading: New IJCAI paper accepted
+context: Our new paper about "Graph Sampling-based Meta-Learning for Molecular Property Prediction" was accepted by IJCAI2023
+
+---
